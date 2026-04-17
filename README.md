@@ -1,18 +1,46 @@
-# BrowserBouncer
+<div align="center">
+  <img src="assets/logo.png" alt="BrowserBouncer Logo" width="128" />
+  <h1>BrowserBouncer</h1>
+  <p><em>The intelligent web link router for macOS.</em></p>
+  <p>
+    <img src="https://img.shields.io/badge/Platform-macOS-lightgrey" alt="Platform" />
+    <img src="https://img.shields.io/badge/Swift-5.0+-orange.svg" alt="Swift Version" />
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License" />
+  </p>
+</div>
+
+<br />
 
 BrowserBouncer is a lightweight, open-source macOS menu bar application that acts as a smart router for your web links. It intercepts standard URL opening events, checks which desktop application sent the request, and instantly routes the link to the correct browser based on your custom rules.
 
-## Features
+---
 
-- **Seamless Routing**: Route links from specific apps (e.g., Slack) to specific browsers (e.g., Microsoft Edge) automatically.
-- **Dynamic Interception Prompt**: If an app isn't allow-listed, BrowserBouncer prompts you to choose a browser and optionally remember the choice.
-- **Advanced Source Detection**: Accurately identifies source applications, even those hidden behind Electron frameworks or sandboxes (like Discord or VSCode), by using frontmost application fallback logic.
+## ✨ Features
 
-## Screenshots
+- 🎯 **Seamless Routing**: Route links from specific apps (e.g., Slack) to specific browsers (e.g., Microsoft Edge) automatically.
+- 💬 **Dynamic Interception Prompt**: If an app isn't allow-listed, BrowserBouncer prompts you to choose a browser and optionally remember the choice.
+- 🕵️ **Advanced Source Detection**: Accurately identifies source applications, even those hidden behind Electron frameworks or sandboxes (like Discord or VSCode), by using frontmost application fallback logic.
 
-<!-- TODO: Add screenshots of the prompt and menu bar settings here -->
+---
 
-## Build Instructions
+## 📸 Screenshots
+
+<div align="center">
+  <img src="assets/routing_rules.png" width="48%" alt="Routing Rules" />
+  &nbsp;
+  <img src="assets/interception_prompt.png" width="48%" alt="Interception Prompt" />
+</div>
+
+---
+
+## 🚧 Roadmap
+
+- [ ] **Light Mode Support**: Native light theme implementation for the routing interface and setup views.
+- [ ] **Cloud Sync**: Optional iCloud syncing for your custom routing rules across multiple Macs.
+
+---
+
+## 🛠️ Build Instructions
 
 1. Clone the repository.
 2. Open `BrowserBouncer.xcodeproj` in Xcode.
@@ -20,10 +48,22 @@ BrowserBouncer is a lightweight, open-source macOS menu bar application that act
 
 *Note: Ensure you have `swiftlint` installed (`brew install swiftlint`) as it is used to enforce code styling.*
 
-## Contributing
+---
+
+## 💬 Feedback & Issues
+
+Found a bug or have a feature request? We'd love to hear about it. Please [open an issue](https://github.com/bdog720/BrowserBouncer/issues) here on GitHub.
+
+## 🤝 Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to open issues or submit pull requests.
 
-## License
+## 📄 License
 
 This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+
+## 💖 Support the Project
+
+If you find BrowserBouncer useful and it saves you from copying and pasting links all day, consider buying me a coffee to support future development!
+
+<a href="https://buymeacoffee.com/bdog720" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 217px !important;" ></a>
