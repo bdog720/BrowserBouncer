@@ -13,11 +13,10 @@ struct BrowserBouncerApp: App {
     
     var body: some Scene {
         // App exists predominantly in the Menu Bar and via dynamic prompt popups.
-        MenuBarExtra("BrowserBouncer", systemImage: "macwindow.badge.plus") {
+        MenuBarExtra("BrowserBouncer", image: "MenuBarIcon") {
             SettingsView()
                 .preferredColorScheme(.dark)
         }
         .menuBarExtraStyle(.window) // Use .window style so we can apply custom SwiftUI layouts instead of a standard Menu
     }
 }
-

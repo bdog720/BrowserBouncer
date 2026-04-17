@@ -5,8 +5,8 @@ This plan details the architecture and micro-tasks required to build an open-sou
 ## Proposed Changes
 
 ### Open Source & Project Initialization
-#### [NEW] /Users/brendonrother/Developer/BrowserBouncer/BrowserBouncer
-- **Micro-task 1:** The **USER** must open Xcode, select "File > New > Project > macOS App", name it `BrowserBouncer`, and save it in `/Users/brendonrother/Developer/BrowserBouncer`. (Headless AI agents cannot reliably generate `.xcodeproj` files from scratch).
+#### [NEW] BrowserBouncer/
+- **Micro-task 1:** The **USER** must open Xcode, select "File > New > Project > macOS App", name it `BrowserBouncer`, and save it in the project root directory. (Headless AI agents cannot reliably generate `.xcodeproj` files from scratch).
 - **Micro-task 2:** Modify the main target configuration to build a macOS app.
 - **Micro-task 3:** Create a standard open-source `README.md` with build instructions, features, and screenshots placeholder.
 - **Micro-task 4:** Create a `LICENSE` file (Apache 2.0).
