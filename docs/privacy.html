@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – BrowserBouncer</title>
+  <meta name="description" content="BrowserBouncer Privacy Policy. BrowserBouncer collects no personal data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0f14;
+      --surface: #13161e;
+      --border: rgba(255,255,255,0.07);
+      --accent: #6c8ef8;
+      --accent-glow: rgba(108,142,248,0.15);
+      --text-primary: #e8eaf0;
+      --text-secondary: #8b90a0;
+      --text-muted: #555b6e;
+      --radius: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.75;
+      min-height: 100vh;
+      padding: 0 20px;
+    }
+
+    /* Subtle grid background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(108,142,248,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(108,142,248,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 0 100px;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 56px;
+    }
+
+    .hero-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #6c8ef8 0%, #9b6cf7 100%);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      flex-shrink: 0;
+      box-shadow: 0 0 32px rgba(108,142,248,0.35);
+    }
+
+    .hero-text h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #e8eaf0 0%, #9b6cf7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-text p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Effective date badge */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-glow);
+      border: 1px solid rgba(108,142,248,0.25);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 100px;
+      margin-bottom: 40px;
+    }
+
+    /* TL;DR card */
+    .tldr {
+      background: linear-gradient(135deg, rgba(108,142,248,0.12) 0%, rgba(155,108,247,0.08) 100%);
+      border: 1px solid rgba(108,142,248,0.2);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tldr::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 160px;
+      height: 160px;
+      background: radial-gradient(circle, rgba(108,142,248,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .tldr h2 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .tldr p {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.65;
+    }
+
+    /* Section cards */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 16px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .section:hover {
+      border-color: rgba(108,142,248,0.2);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .section-icon {
+      font-size: 1.2rem;
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+    }
+
+    .section p {
+      color: var(--text-secondary);
+      font-size: 0.94rem;
+      line-height: 1.75;
+    }
+
+    .section p + p {
+      margin-top: 10px;
+    }
+
+    /* Contact link */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: opacity 0.15s ease;
+    }
+
+    a:hover { opacity: 0.75; text-decoration: underline; }
+
+    /* Footer */
+    .footer {
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .footer a {
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 48px 0 72px; }
+      .hero { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .hero-text h1 { font-size: 1.4rem; }
+      .tldr, .section { padding: 22px 20px; }
+      .footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="hero">
+      <div class="hero-icon">🎯</div>
+      <div class="hero-text">
+        <h1>BrowserBouncer</h1>
+        <p>Privacy Policy</p>
+      </div>
+    </div>
+
+    <span class="badge">
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      Effective 26 April 2026 · Last updated 26 April 2026
+    </span>
+
+    <div class="tldr">
+      <h2>The short version</h2>
+      <p>BrowserBouncer does not collect, store, or transmit any personal data — ever. All routing rules live only on your Mac. No analytics, no accounts, no tracking.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📋</div>
+        <h2>Overview</h2>
+      </div>
+      <p>BrowserBouncer is a macOS menu bar application that intercepts URL opening events and routes them to a browser of your choice based on rules you configure. This privacy policy explains what information the app handles and how.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🚫</div>
+        <h2>No Data Collection</h2>
+      </div>
+      <p>BrowserBouncer does not collect any personal information. The app does not transmit any data to external servers, third parties, or the developer. There are no analytics libraries, no crash reporting services, and no advertising SDKs included in the application.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">💾</div>
+        <h2>Local Storage Only</h2>
+      </div>
+      <p>Your routing rules — the app-to-browser mappings you define — are stored exclusively in your Mac's local app storage using macOS standard data persistence (UserDefaults). This data never leaves your device and is not accessible to anyone other than you.</p>
+      <p>The URLs that BrowserBouncer intercepts are processed in memory for routing purposes only and are not logged, stored, or transmitted anywhere.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🌐</div>
+        <h2>No Internet Access Required</h2>
+      </div>
+      <p>BrowserBouncer does not require an internet connection to function. The app makes no outbound network requests of any kind during normal operation.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🔒</div>
+        <h2>macOS Permissions</h2>
+      </div>
+      <p>BrowserBouncer is set as your default browser handler at the operating system level so it can intercept link-opening events. This is a standard macOS mechanism. The app does not use this permission to monitor your browsing activity — it only reads the URL at the moment a link is opened in order to route it immediately.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">👶</div>
+        <h2>Children's Privacy</h2>
+      </div>
+      <p>BrowserBouncer does not collect any information from anyone, including children under the age of 13. There is nothing to collect.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🔄</div>
+        <h2>Changes to This Policy</h2>
+      </div>
+      <p>If this policy ever changes, the updated version will be published at this URL with a revised effective date. Given the nature of the app, we do not anticipate meaningful changes.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">✉️</div>
+        <h2>Contact</h2>
+      </div>
+      <p>If you have questions about this privacy policy, you can reach out by opening an issue on the <a href="https://github.com/bdog720/BrowserBouncer/issues" target="_blank" rel="noopener noreferrer">BrowserBouncer GitHub repository</a>.</p>
+    </div>
+
+    <footer class="footer">
+      <p>© 2026 BrowserBouncer · Apache 2.0 License</p>
+      <a href="https://github.com/bdog720/BrowserBouncer" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+    </footer>
+
+  </div>
+</body>
+</html>
