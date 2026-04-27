@@ -35,6 +35,8 @@ BrowserBouncer is a lightweight, open-source macOS menu bar application that act
 
 ## 🚧 Roadmap
 
+- [ ] **HTML File Handling**: Support opening local `.html` files directly in your chosen browser via BrowserBouncer, rather than requiring a manual "Open With" workaround.
+- [ ] **Browser Profile Support**: Allow rules to target specific profiles within a browser (e.g., open work links in your Edge Work profile and personal links in your Edge Personal profile).
 - [ ] **Light Mode Support**: Native light theme implementation for the routing interface and setup views.
 - [ ] **Cloud Sync**: Optional iCloud syncing for your custom routing rules across multiple Macs.
 
