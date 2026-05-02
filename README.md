@@ -7,6 +7,9 @@
     <img src="https://img.shields.io/badge/Swift-5.0+-orange.svg" alt="Swift Version" />
     <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License" />
   </p>
+  <a href="https://apps.apple.com/us/app/browserbouncer/id6762415860?mt=12">
+    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83" alt="Download on the Mac App Store" width="200" />
+  </a>
 </div>
 
 <br />
@@ -42,7 +45,19 @@ BrowserBouncer is a lightweight, open-source macOS menu bar application that act
 
 ---
 
-## 🛠️ Build Instructions
+## 📥 Installation
+
+### Mac App Store (Recommended)
+
+The easiest way to get BrowserBouncer is directly from the Mac App Store — no setup required.
+
+<a href="https://apps.apple.com/us/app/browserbouncer/id6762415860?mt=12">
+  <img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83" alt="Download on the Mac App Store" width="200" />
+</a>
+
+### Build from Source
+
+Prefer to build it yourself? Clone the repo and build with Xcode:
 
 1. Clone the repository.
 2. Open `BrowserBouncer.xcodeproj` in Xcode.
